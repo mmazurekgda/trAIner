@@ -20,6 +20,9 @@ def cli(settings: Settings):
     )
     logger.info(f"Welcome to {settings.PROJECT_NAME}!")
     logger.debug(f"Applied settings: \n{settings.model_dump_json(indent=4)}")
+    logger.info(f"Experiment: {settings.EXPERIMENT}")
+    logger.info(f"Run: {settings.RUN}")
+    logger.info(f"Run directory: {settings.run_dir}")
 
 
 if __name__ == "__main__":
